@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.alain-passard.com/en/contact/ -->
+<html >
+<head><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contact</title><link rel="stylesheet" href="./ L&#39;Arpège_files/header-c89fbb18dba32e7ceabb11b80222a4ce4e7c938e.min.css" > <noscript></noscript> </head>
+
+<body data-rsssl="1" class="page-template page-template-page-contact page-template-page-contact-php page page-id-520 has-header-image page-two-column colors-light topmob scrolled" style="min-height: 952px; opacity: 1;"><div id="page" class="site"><header id="masthead" class="site-header" role="banner"><p class="site-title"><a href="restoraunt.html" rel="home">L'Arpège</a></p><div class="menu-langues-container">
+
+
+<style type="text/css">input {
+  position: fixed;
+  opacity: 0;
+}
+
+label {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+label::before {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 38, 57, 0.69);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger {
+
+  position: fixed;
+  top: 2em;
+  left: 2em;
+  z-index: 6;
+  width: 2.7em;
+  height: 2.6em;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger::before,
+label .burger .bar, label .burger::after {
+  
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 12%;
+  background: black;
+  content: "";
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger .bar {
+  top: 44%;
+}
+label .burger::before {
+  top: 0;
+  transform-origin: top left;
+}
+label .burger::after {
+  bottom: 0;
+  transform-origin: bottom left;
+}
+
+input:focus + label .burger,
+label:hover .burger {
+  opacity: 0.75;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translate3d(0, 0, 0);
+  /* material acceleration */
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 25em;
+  background: #d62956;
+  content: "";
+  transform: skewX(15deg) translateX(-100%);
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+@media (min-width: 40em) {
+  nav::before {
+    width: 40em;
+  }
+}
+nav a {
+  margin: 0.5em 0;
+  padding: 0.2em 2em;
+  font-size: 2.3em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transform: translateX(-100%);
+  transition: color 0.15s, transform 0.5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav a:nth-child(1) {
+  transition-delay: 0s, 100ms;
+}
+nav a:nth-child(2) {
+  transition-delay: 0s, 150ms;
+}
+nav a:nth-child(3) {
+  transition-delay: 0s, 200ms;
+}
+nav a:nth-child(4) {
+  transition-delay: 0s, 250ms;
+}
+nav a:nth-child(5) {
+  transition-delay: 0s, 300ms;
+}
+nav a:nth-child(6) {
+  transition-delay: 0s, 350ms;
+}
+nav a:hover, nav a:focus {
+  color: black;
+}
+
+main {
+  overflow: hidden;
+}
+main .content {
+  transform: translate3d(0, 0, 0);
+  /* material acceleration */
+  will-change: transform, filter;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[id=navcheck]:checked + label::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+[id=navcheck]:checked + label .burger::before, [id=navcheck]:checked + label .burger::after {
+  width: 141.42%;
+}
+[id=navcheck]:checked + label .burger::before {
+  transform: rotate(45deg) translateY(-50%);
+}
+[id=navcheck]:checked + label .burger::after {
+  transform: rotate(-45deg) translateY(50%);
+}
+[id=navcheck]:checked + label .burger .bar {
+  transform: scale(0.1);
+}
+[id=navcheck]:checked ~ nav {
+  transform: translateX(0);
+}
+[id=navcheck]:checked ~ nav::before {
+  transform: skewX(15deg) translateX(0);
+}
+[id=navcheck]:checked ~ nav a {
+  transform: translateX(0);
+}
+[id=navcheck]:checked ~ main .content {
+  transform: translateX(3em);
+  transform-origin: left center;
+  filter: blur(2px);
+}
+
+/* helper */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* misc */
+body {
+  overflow-x: hidden;
+  
+
+  font: 1em/1.4 "lato";
+}
+
+main {
+ 
+  padding: 5% 0;
+}
+
+article {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+@media (min-width: 60em) {
+  article {
+    width: 50%;
+  }
+}
+
+h1 {
+  font: 2.5em/1.4 "roboto condensed";
+  font-weight: 700;
+}
+</style>
+<script type="text/javascript" ></script>
+<header >
+<input type="checkbox" id="navcheck" role="button" title="menu">
+<label for="navcheck" aria-hidden="true" title="menu">
+  <span class="burger">
+    <span class="bar">
+      <span class="visuallyhidden">Menu</span>
+    </span>
+  </span>
+</label>
+<nav id="menu">
+  <a href="#">Booking</a>
+  <a href="/Users/elmir/Desktop/my_sit/restoraunt.html#men" onclick="slowScroll ('#men')">Menu</a>
+  <a href="/Users/elmir/Desktop/my_sit/restoraunt.html#arpege" onclick="slowScroll ('#arpege')">Al-Halal</a>
+  <a href="special.html">Special cuisine</a>
+  <a href="garden.html">Kitchen Garden</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+
+
+
+</header>
+
+
+</head>
+<script type="text/javascript">
+jQuery(function(f){
+    var element = f('#back-top');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 500 ? 'In': 'Out')](500);           
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    </header><!-- #masthead --><div class="site-content-contain"><div id="content" class="site-content" style="min-height: 466px;"><div id="primary" class="content-area"> <main id="main" class="site-main" role="main"><div class="entete avimg" style="min-height: 939px; line-height: 939px;"><div class="left rocket-lazyload lazyloaded" style="background-image: url(&quot;https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02.jpg&quot;);" data-ll-status="loaded"></div></div><div class="entete"><div class="wrapper"><h1>Contact</h1></div></div><div class="contactc"><div class="wrapper"><div class="left"><div class="part1"> <img width="1000" height="1500" src="file:///Users/elmir/Desktop/my_sit/contact.png" data-ll-status="loaded"><noscript><img width="1000" height="1500" src="https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02.jpg" class="attachment-big size-big" alt="" loading="lazy" srcset="https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02.jpg 1000w, https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02-200x300.jpg 200w, https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02-683x1024.jpg 683w, https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02-768x1152.jpg 768w, https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02-667x1000.jpg 667w, https://www.alain-passard.com/wp-content/uploads/2020/09/f8168f186ca45a6adbff870fd59bdf02-333x500.jpg 333w" sizes="100vw" /></noscript></div><div class="part3"><h2>Les Paniers d’Alain</h2><p>For all requests regarding <a href="http://www.lespaniersdalain.com/">Les Paniers d’Alain</a> or our kitchen gardens</p><p>Telephone : +33 (0)1 45 50 23 15<br> Email : <strong><a href="mailto:lespaniersdalain@gmail.com">lespaniersdalain@gmail.com</a></strong></p><h2>L’Arrière Cuisine</h2><p>For all enquiries about the artistic universe of Chef Alain Passard:</p><p><span style="color: #767676; font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.15em; text-transform: uppercase;">« Arrière Cuisine »<br> </span><span style="font-size: 1rem;">57 rue de Bourgogne, </span><span style="font-size: 1rem;">Paris 7e</span></p><p>Monday to Friday from 10:00 a.m. to 6:00 p.m.</p><p>Telephone: +33 (0)1 45 50 26 10<br> <span style="font-size: 1rem;">E-mail: </span><a style="font-size: 1rem;" href="https://www.alain-passard.com/en/contact/quot;mailto:bureau@alain-passard.com&amp;quot">bureau@alain-passard.com</a></p></div></div><div class="right"><div class="part2"><h2>Restaurant</h2><p>Information, reservations, gift vouchers, etc.<br> Our receptionists are at your service Monday through Friday!</p><h5>L’Arpège</h5><p>84 rue de Varenne, Paris 7e<br> Phone : + 33 (0)1 47 05 09 06<br> Mail : <strong><a href="mailto:arpege.passard@wanadoo.fr">arpege.passard@wanadoo.fr</a></strong></p><p>The restaurant is open<br> <span style="font-size: 1rem;">Monday to Friday for </span><span style="font-size: 1rem;">lunch and dinner.</span></p><p>No car valet service.</p></div><div class="part4"><h2>Bureau</h2><p>Les équipes du bureau sont à votre disposition pour toute demande concernant :</p><p>– Évènements en France et à l’international<br> – Presse<br> – Communication &amp; Marketing<br> – Collaborations &amp; Partenariats<br> – Requêtes spéciales à l’attention du Chef Passard</p><p>Téléphone : +33 (0)1 45 50 23 14<br> Email : <strong><a href="mailto:bureau@alain-passard.com">bureau@alain-passard.com</a></strong></p><p>Demande relative à la comptabilité :<br> <strong><a href="mailto:sabine.forlini@orange.fr">sabine.forlini@orange.fr</a></strong></p><h2>Recrutement</h2><p>L’Arpège est à la recherche de ses nouveaux talents ! N’hésitez pas à nous transmettre votre candidature spontanée !</p><p>Email : <strong><a href="mailto:bureau@alain-passard.com">bureau@alain-passard.com</a></strong></p></div></div></div></div> </main><!-- #main --></div><!-- #primary --></div><!-- #content --><footer id="colophon" class="site-footer" role="contentinfo"><div class="wrapper"><div class="cols"><div class="col"><div class="menu-footer-1-eng-container"><ul id="menu-footer-1-eng" class="footer-menu"><li id="menu-item-539" class="linktitle menu-item menu-item-type-custom menu-item-object-custom menu-item-539"><a href="https://www.alain-passard.com/en/contact/#"><span>About</span></a></li><li id="menu-item-533" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-533"><a href="https://www.alain-passard.com/en/le-chef/"><span>Alain Passard</span></a></li><li id="menu-item-568" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-568"><a href="https://www.alain-passard.com/en/?goto=arpege"><span>L’Arpège</span></a></li><li id="menu-item-567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-567"><a href="https://www.alain-passard.com/en/?goto=ourmenus"><span>Our Menus</span></a></li><li id="menu-item-534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-534"><a href="https://www.alain-passard.com/en/les-potagers/"><span>Kitchen Gardens</span></a></li><li id="menu-item-535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-535"><a href="https://www.alain-passard.com/en/larriere-cuisine/"><span>L’Arrière Cuisine</span></a></li></ul></div></div><div class="col"><div class="menu-footer-2-en-container"><ul id="menu-footer-2-en" class="footer-menu"><li id="menu-item-579" class="linktitle menu-item menu-item-type-custom menu-item-object-custom menu-item-579"><a href="https://www.alain-passard.com/en/contact/#"><span>Contact</span></a></li><li id="menu-item-587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-587"><a href="mailto:arpege.passard@wanadoo.fr"><span>L’Arpège</span></a></li><li id="menu-item-586" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-586"><a href="mailto:bureau@alain-passard.com"><span>L’Arrière Cuisine</span></a></li><li id="menu-item-585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-585"><a href="mailto:bureau@alain-passard.com"><span>Communication &amp; Events</span></a></li><li id="menu-item-584" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-584"><a href="mailto:bureau@alain-passard.com"><span>Career</span></a></li></ul></div></div><div class="col"><div class="menu-footer-3-en-container"><ul id="menu-footer-3-en" class="footer-menu"><li id="menu-item-577" class="linktitle menu-item menu-item-type-custom menu-item-object-custom menu-item-577"><a href="https://www.alain-passard.com/en/contact/#"><span>Legals informations</span></a></li><li id="menu-item-578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578"><a href="https://www.alain-passard.com/en/cgu-cgv/"><span>Terms of use</span></a></li><li id="menu-item-588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-588"><a href="https://www.alain-passard.com/en/legals/?goto=photos"><span>Photo credits</span></a></li></ul></div></div></div></div><div class="wrapper wrapperxl"><div class="left"><div class="menu-footer-4-en-container"><ul id="menu-footer-4-en" class="pied-menu"><li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a href="https://www.alain-passard.com/en/cookies-politique-de-confidentialite/"><span>Cookies and privacy policy</span></a></li></ul></div></div><div class="right"><div class="menu-footer-5-en-container"><ul id="menu-footer-5-en" class="pied-menu"><li id="menu-item-575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-575"><a href="https://www.alain-passard.com/en/legals/"><span>Legals</span></a></li></ul></div></div></div> </footer><!-- #colophon --></div><!-- .site-content-contain --></div><!-- #page --><a class="resa" href="https://bookings.zenchef.com/results?rid=354036&amp;lang=fr" target="_blank"><img src="./ L&#39;Arpège_files/bat.png" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://www.alain-passard.com/wp-content/uploads/2020/10/bat.png" /></noscript><span>Book a table</span></a> <script src="./ L&#39;Arpège_files/script.js"></script> 
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+
+Served from: www.alain-passard.com @ 2021-06-17 17:22:08 by W3 Total Cache
+--></body></html>

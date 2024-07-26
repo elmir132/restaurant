@@ -1,0 +1,50 @@
+
+.entete {
+    text-align: center;
+}
+.contactc {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+.part1 {
+    position: relative;
+}
+.part3 {
+    margin-top: 40px;
+}
+.contactc h2:not(:first-child), .part4 {
+    margin-top: 70px;
+}
+.bloc-deux_colonnes .blok-texte .txt, .txtsuppl, .oeuvrestxt, .contactc, .contactc h5 {
+    font-size: 12px;
+}
+.site-header {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: 100px;
+    -webkit-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    transition: background 0.4s ease;
+}
+
+
+
+
+

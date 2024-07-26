@@ -1,0 +1,164 @@
+
+.body, .button, .input, .select, .textarea {
+    color: #000;
+    font-family: "Montserrat","Helvetica Neue",helvetica,arial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+body{
+  background: #fff;
+    -webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease;
+    transition: opacity 0.8s ease;
+    -webkit-font-smoothing: antialiased;
+        color: #000;
+    font-family: "Montserrat","Helvetica Neue",helvetica,arial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}	
+
+.start{
+    color: black;
+    font-family: "Montserrat","Helvetica Neue",helvetica,arial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 110px 0;
+    font-weight: 300;
+    letter-spacing: .4em;
+    font-size: 38px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
+}
+.citation {
+    position: relative;
+    font-family: 'DM Serif Text',serif;
+    font-size: 35px;
+    letter-spacing: .05em;
+    color: #849D75;
+    text-align: center;
+}
+p {
+    margin: 0 0 1.5em;
+    padding: 0;
+}
+.entete:not(.avimg) .signature {
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.signature {
+    display: block;
+    width: 400px;
+    height: 100px;
+    background: url(signatature.png) no-repeat center center;
+    background-size: contain;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.blocs {
+    margin-bottom: 0;
+}
+.oeuvresc, .mosaic {
+    position: relative;
+}
+.mosaic {
+    height: 820px;
+    width: 100%;
+    z-index: 0;
+}
+.oeuvrestxt {
+    position: relative;
+    padding: 0 37% 45px 18%;
+    font-size: 15px;
+    margin-top: -75px;
+}
+.oeuvrestxt h3 {
+    font-family: 'DM Serif Text',serif;
+    font-size: 35px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #849D75;
+    margin-bottom: 0.8em;
+}
+a.bouton {
+    display: inline-block;
+    font-family: 'DM Serif Text',serif;
+    font-size: 17px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #849D75;
+    line-height: 1;
+    padding: 12px 34px;
+    border: 1px solid #849D75;
+}
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.bloc-deux_colonnes .right {
+    padding-left: 100px;
+    position: relative;
+}
+.mosaic img:nth-of-type(1) {
+    bottom: 160px;
+    left: 0;
+    width: 230px;
+    z-index: 5;
+}
+.mosaic img:nth-of-type(2) {
+    top: 20px;
+    left: 190px;
+    width: 305px;
+    z-index: 4;
+}
+.mosaic img:nth-of-type(3) {
+    bottom: 160px;
+    left: 425px;
+    width: 390px;
+    z-index: 3;
+}
+.mosaic img:nth-of-type(4) {
+    top: 0;
+    right: 125px;
+    width: 250px;
+    z-index: 2;
+}
+.mosaic img:nth-of-type(5) {
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    z-index: 1;
+}
+.bloc-deux_colonnes.enav.gauche .wrapper:after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: calc(100% + 120px);
+    position: absolute;
+    left: 0;
+    top: -60px;
+    background: #849D75;
+    z-index: -1;
+}
+.mosaic img {
+    display: block;
+    position: absolute;
+}
+img, video {
+    height: auto;
+    max-width: 100%;
+}
